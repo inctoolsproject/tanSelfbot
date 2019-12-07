@@ -1,4 +1,4 @@
-# tanflex-Selfbot
+# tanSelfbot
 # For install Tutorial [HERE](https://www.youtube.com/watch?v=v_h-t8iGYzQ&t=28s)
 # ![logo](line_sm.png) LINE Python
 
@@ -29,8 +29,8 @@
          pip3 install tweepy
          pip3 install wikipedia
          apt install git
-         git clone https://github.com/tanpattaya/tanflex-Selfbot
-         cd tanflex-Selfbot
+         git clone https://github.com/tanpattaya/tanSelfbot
+         cd tanSelfbot
          python3 adit.py
 ```
 
@@ -52,7 +52,7 @@
         sudo pip3 install tweepy 
         sudo pip3 install wikipedia 
         sudo apt-get install git 
-        git clone https://github.com/tanpattaya/tanflex-Selfbot
-        cd tanflex-Selfbot 
+        git clone https://github.com/tanpattaya/tanSelfbot
+        cd tanSelfbot 
         python3 adit.py 
 ```

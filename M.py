@@ -31,8 +31,8 @@ except ImportError:
 #==============================================================================#
 
 = LINE("tanknug1983@gmail.com","https://line.me/R/ti/p/~ptatan1983")
-= LINE.log("Auth Token : " + str(line.authToken))
-= LINE.log("Timeline Token : " + str(line.tl.channelAccessToken))
+cl.log("Auth Token : " + str(cl.authToken))
+cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
 waitOpen = codecs.open("Max2.json","r","utf-8")
 settingsOpen = codecs.open("max.json","r","utf-8")
@@ -43,13 +43,13 @@ images = json.load(imagesOpen)
 settings = json.load(settingsOpen)
 stickers = json.load(stickersOpen)
 #==============================================================================#
-ifMID = cl.profile.mid
-ifProfile = cl.getProfile()
-ifSettings = cl.getSettings()
+clMID = cl.profile.mid
+clProfile = cl.getProfile()
+clSettings = cl.getSettings()
 #==============================================================================#
-ifPoll = OEPoll(cl)
-ifMID = cl.getProfile().mid
-admin = [lineMID]
+clPoll = OEPoll(cl)
+clMID = cl.getProfile().mid
+cladmin = [lineMID]
 loop = asyncio.get_event_loop()
 listToken = ['desktopmac','desktopwin','iosipad','chromeos','win10']
 mc = {"wr":{}}

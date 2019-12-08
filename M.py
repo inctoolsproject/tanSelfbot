@@ -29,25 +29,171 @@ try:
 except ImportError:
     import urllib2
 #==============================================================================#
+boy = LineClient()
+#boy = LineClient(authToken=' TOKEN MU CINTA')
+boy.log("Auth Token : " + str(boy.authToken))
+channel = LineChannel(boy)
+boy.log("Channel Access Token : " + str(channel.channelAccessToken))
+#==============================================================================#
+k1 = LineClient()
+#k1 = LineClient(authToken=' TOKEN MU CINTA')
+k1.log("Auth Token : " + str(k1.authToken))
+channel1 = LineChannel(k1)
+k1.log("Channel Access Token : " + str(channel1.channelAccessToken))
+#==============================================================================#
+k2 = LineClient()
+#k2 = LineClient(authToken=' TOKEN MU CINTA')
+k2.log("Auth Token : " + str(k2.authToken))
+channel2 = LineChannel(k2)
+k2.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#==============================================================================#
+k3 = LineClient()
+#k3 = LineClient(authToken=' TOKEN MU CINTA')
+k3.log("Auth Token : " + str(k3.authToken))
+channel3 = LineChannel(k3)
+k3.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#==============================================================================#
+k4 = LineClient()
+#k4 = LineClient(authToken=' TOKEN MU CINTA')
+k4.log("Auth Token : " + str(k4.authToken))
+channel4 = LineChannel(k4)
+k4.log("Channel Access Token : " + str(channel4.channelAccessToken))
+#==============================================================================#
+k5 = LineClient()
+#k5 = LineClient(authToken=' TOKEN MU CINTA')
+k5.log("Auth Token : " + str(k5.authToken))
+channel5 = LineChannel(k5)
+k5.log("Channel Access Token : " + str(channel5.channelAccessToken))
+#==============================================================================#
+k6 = LineClient()
+#k6 = LineClient(authToken=' TOKEN MU CINTA')
+k6.log("Auth Token : " + str(k6.authToken))
+channel6 = LineChannel(k6)
+k6.log("Channel Access Token : " + str(channel6.channelAccessToken))
+#==============================================================================#
+k7 = LineClient()
+#k7 = LineClient(authToken=' TOKEN MU CINTA')
+k7.log("Auth Token : " + str(k7.authToken))
+channel7 = LineChannel(k7)
+k7.log("Channel Access Token : " + str(channel7.channelAccessToken))
+#==============================================================================#
+k8 = LineClient()
+#k8 = LineClient(authToken=' TOKEN MU CINTA')
+k8.log("Auth Token : " + str(k8.authToken))
+channel8 = LineChannel(k8)
+k8.log("Channel Access Token : " + str(channel8.channelAccessToken))
+#==============================================================================#
+k9 = LineClient()
+#k9 = LineClient(authToken=' TOKEN MU CINTA')
+k9.log("Auth Token : " + str(k9.authToken))
+channel9 = LineChannel(k9)
+k9.log("Channel Access Token : " + str(channel9.channelAccessToken))
+#==============================================================================#
+k10 = LineClient()
+#k10 = LineClient(authToken=' TOKEN MU CINTA')
+k10.log("Auth Token : " + str(k10.authToken))
+channel10 = LineChannel(k10)
+k10.log("Channel Access Token : " + str(channel10.channelAccessToken))
+#==============================================================================#
+sw = LineClient()
+#sw = LineClient(authToken=' TOKEN MU CINTA')
+sw.log("Auth Token : " + str(sw.authToken))
+channel = LineChannel(sw)
+sw.log("Channel Access Token : " + str(channel.channelAccessToken))
+#==============================================================================#
+poll = LinePoll(boy)
+poll = LinePoll(k1)
+poll = LinePoll(k2)
+poll = LinePoll(k3)
+poll = LinePoll(k4)
+poll = LinePoll(k5)
+poll = LinePoll(k6)
+poll = LinePoll(k7)
+poll = LinePoll(k8)
+poll = LinePoll(k9)
+poll = LinePoll(k10)
+call = boy
+creator = ["uda8195e53e6c6e17f3f745743e477100"]
+owner = ["uda8195e53e6c6e17f3f745743e477100"]
+admin = ["uda8195e53e6c6e17f3f745743e477100"]
+staff = ["uda8195e53e6c6e17f3f745743e477100"]
+mid = boy.getProfile().mid
+Amid = k1.getProfile().mid
+Bmid = k2.getProfile().mid
+Cmid = k3.getProfile().mid
+Dmid = k4.getProfile().mid
+Emid = k5.getProfile().mid
+Fmid = k6.getProfile().mid
+Gmid = k7.getProfile().mid
+Hmid = k8.getProfile().mid
+Imid = k9.getProfile().mid
+Jmid = k10.getProfile().mid
+Zmid = sw.getProfile().mid
+KAC = [boy,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,sw]
+ABC = [boy,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,sw]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Zmid]
+Aditmadzs = admin + staff + creator
 
-= LINE("tanknug1983@gmail.com","https://line.me/R/ti/p/~ptatan1983")
-cl.log("Auth Token : " + str(cl.authToken))
-cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
-ด้วย open ( ' creator.json ' , ' r ' ) เป็น fp:
-    creator = json.load (fp)
-ด้วย open ( ' owner.json ' , ' r ' ) เป็น fp:
-    owner = json.load (fp)
-ด้วย open ( ' admin.json ' , ' r ' ) เป็น fp:
-    ผู้ดูแลระบบ= json.load (fp)    
+protectqr = []
+protectkick = []
+protectjoin = []
+protectinvite = []
+protectcancel = []
+protectantijs = []
+ghost = []
 
-Setbot1 = codecs.open ( " setting.json " , " r " , " utf-8 " )
-Setmain = json.load (Setbot1)
-Setbot2 = codecs.open ( " settings.json " , " r " , " utf-8 " )
-settings = json.load (Setbot2)
-Setbot3 = codecs.open ( " wait.json " , " r " , " utf-8 " )
-wait = json.load (Setbot3)
-Setbot4 = codecs.open ( " read.json " , " r " , " utf-8 " )
-read = json.load (Setbot4)
+welcome = []
+simisimi = []
+translateen = []
+translateid = []
+translateth = []
+translatetw = []
+translatear = []
+
+myProfile = {
+	"displayName": "",
+	"statusMessage": "",
+	"pictureStatus": ""
+}
+
+boyProfile = boy.getProfile()
+myProfile["displayName"] = boyProfile.displayName
+myProfile["statusMessage"] = boyProfile.statusMessage
+myProfile["pictureStatus"] = boyProfile.pictureStatus
+
+responsename1 = k1.getProfile().displayName
+responsename2 = k2.getProfile().displayName
+responsename3 = k3.getProfile().displayName
+responsename4 = k4.getProfile().displayName
+responsename5 = k5.getProfile().displayName
+responsename6 = k6.getProfile().displayName
+responsename7 = k7.getProfile().displayName
+responsename8 = k8.getProfile().displayName
+responsename9 = k9.getProfile().displayName
+responsename10 = k10.getProfile().displayName
+responsename = sw.getProfile().displayName
+
+cctv = {
+    "cyduk":{},
+    "point":{},
+    "sidermem":{}
+}
+
+with open('creator.json', 'r') as fp:
+    creator = json.load(fp)
+with open('owner.json', 'r') as fp:
+    owner = json.load(fp)
+with open('admin.json', 'r') as fp:
+    admin = json.load(fp)    
+
+Setbot1 = codecs.open("setting.json","r","utf-8")
+Setmain = json.load(Setbot1)
+Setbot2 = codecs.open("settings.json","r","utf-8")
+settings = json.load(Setbot2)
+Setbot3 = codecs.open("wait.json","r","utf-8")
+wait = json.load(Setbot3)
+Setbot4 = codecs.open("read.json","r","utf-8")
+read = json.load(Setbot4)
 #==============================================================================#
 clMID = cl.profile.mid
 clProfile = cl.getProfile()

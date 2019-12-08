@@ -33,15 +33,21 @@ except ImportError:
 = LINE("tanknug1983@gmail.com","https://line.me/R/ti/p/~ptatan1983")
 cl.log("Auth Token : " + str(cl.authToken))
 cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
+ด้วย open ( ' creator.json ' , ' r ' ) เป็น fp:
+    creator = json.load (fp)
+ด้วย open ( ' owner.json ' , ' r ' ) เป็น fp:
+    owner = json.load (fp)
+ด้วย open ( ' admin.json ' , ' r ' ) เป็น fp:
+    ผู้ดูแลระบบ= json.load (fp)    
 
-waitOpen = codecs.open("Max2.json","r","utf-8")
-settingsOpen = codecs.open("max.json","r","utf-8")
-imagesOpen = codecs.open("image.json","r","utf-8")
-stickersOpen = codecs.open("sticker.json","r","utf-8")
-wait = json.load(waitOpen)
-images = json.load(imagesOpen)
-settings = json.load(settingsOpen)
-stickers = json.load(stickersOpen)
+Setbot1 = codecs.open ( " setting.json " , " r " , " utf-8 " )
+Setmain = json.load (Setbot1)
+Setbot2 = codecs.open ( " settings.json " , " r " , " utf-8 " )
+settings = json.load (Setbot2)
+Setbot3 = codecs.open ( " wait.json " , " r " , " utf-8 " )
+wait = json.load (Setbot3)
+Setbot4 = codecs.open ( " read.json " , " r " , " utf-8 " )
+read = json.load (Setbot4)
 #==============================================================================#
 clMID = cl.profile.mid
 clProfile = cl.getProfile()

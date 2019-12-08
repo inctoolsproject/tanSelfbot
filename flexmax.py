@@ -27,185 +27,29 @@ _session = requests.session()
 try:
     import urllib.request as urllib2
 except ImportError:
-    import urllib3
+    import urllib2
 #==============================================================================#
 
- = LINE('')
-cl.log("Auth Token : " + str(cl.authToken))
-cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
-boy = LineClient()
-#boy = LineClient(authToken=' TOKEN MU CINTA')
-boy.log("Auth Token : " + str(boy.authToken))
-channel = LineChannel(boy)
-boy.log("Channel Access Token : " + str(channel.channelAccessToken))
-#==============================================================================#
-k1 = LineClient()
-#k1 = LineClient(authToken=' TOKEN MU CINTA')
-k1.log("Auth Token : " + str(k1.authToken))
-channel1 = LineChannel(k1)
-k1.log("Channel Access Token : " + str(channel1.channelAccessToken))
-#==============================================================================#
-k2 = LineClient()
-#k2 = LineClient(authToken=' TOKEN MU CINTA')
-k2.log("Auth Token : " + str(k2.authToken))
-channel2 = LineChannel(k2)
-k2.log("Channel Access Token : " + str(channel2.channelAccessToken))
-#==============================================================================#
-k3 = LineClient()
-#k3 = LineClient(authToken=' TOKEN MU CINTA')
-k3.log("Auth Token : " + str(k3.authToken))
-channel3 = LineChannel(k3)
-k3.log("Channel Access Token : " + str(channel3.channelAccessToken))
-#==============================================================================#
-k4 = LineClient()
-#k4 = LineClient(authToken=' TOKEN MU CINTA')
-k4.log("Auth Token : " + str(k4.authToken))
-channel4 = LineChannel(k4)
-k4.log("Channel Access Token : " + str(channel4.channelAccessToken))
-#==============================================================================#
-k5 = LineClient()
-#k5 = LineClient(authToken=' TOKEN MU CINTA')
-k5.log("Auth Token : " + str(k5.authToken))
-channel5 = LineChannel(k5)
-k5.log("Channel Access Token : " + str(channel5.channelAccessToken))
-#==============================================================================#
-k6 = LineClient()
-#k6 = LineClient(authToken=' TOKEN MU CINTA')
-k6.log("Auth Token : " + str(k6.authToken))
-channel6 = LineChannel(k6)
-k6.log("Channel Access Token : " + str(channel6.channelAccessToken))
-#==============================================================================#
-k7 = LineClient()
-#k7 = LineClient(authToken=' TOKEN MU CINTA')
-k7.log("Auth Token : " + str(k7.authToken))
-channel7 = LineChannel(k7)
-k7.log("Channel Access Token : " + str(channel7.channelAccessToken))
-#==============================================================================#
-k8 = LineClient()
-#k8 = LineClient(authToken=' TOKEN MU CINTA')
-k8.log("Auth Token : " + str(k8.authToken))
-channel8 = LineChannel(k8)
-k8.log("Channel Access Token : " + str(channel8.channelAccessToken))
-#==============================================================================#
-k9 = LineClient()
-#k9 = LineClient(authToken=' TOKEN MU CINTA')
-k9.log("Auth Token : " + str(k9.authToken))
-channel9 = LineChannel(k9)
-k9.log("Channel Access Token : " + str(channel9.channelAccessToken))
-#==============================================================================#
-k10 = LineClient()
-#k10 = LineClient(authToken=' TOKEN MU CINTA')
-k10.log("Auth Token : " + str(k10.authToken))
-channel10 = LineChannel(k10)
-k10.log("Channel Access Token : " + str(channel10.channelAccessToken))
-#==============================================================================#
-sw = LineClient()
-#sw = LineClient(authToken=' TOKEN MU CINTA')
-sw.log("Auth Token : " + str(sw.authToken))
-channel = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel.channelAccessToken))
-#==============================================================================#
-poll = LinePoll(boy)
-poll = LinePoll(k1)
-poll = LinePoll(k2)
-poll = LinePoll(k3)
-poll = LinePoll(k4)
-poll = LinePoll(k5)
-poll = LinePoll(k6)
-poll = LinePoll(k7)
-poll = LinePoll(k8)
-poll = LinePoll(k9)
-poll = LinePoll(k10)
-call = boy
-creator = ["uda8195e53e6c6e17f3f745743e477100"]
-owner = ["uda8195e53e6c6e17f3f745743e477100"]
-admin = ["uda8195e53e6c6e17f3f745743e477100"]
-staff = ["uda8195e53e6c6e17f3f745743e477100"]
-mid = boy.getProfile().mid
-Amid = k1.getProfile().mid
-Bmid = k2.getProfile().mid
-Cmid = k3.getProfile().mid
-Dmid = k4.getProfile().mid
-Emid = k5.getProfile().mid
-Fmid = k6.getProfile().mid
-Gmid = k7.getProfile().mid
-Hmid = k8.getProfile().mid
-Imid = k9.getProfile().mid
-Jmid = k10.getProfile().mid
-Zmid = sw.getProfile().mid
-KAC = [boy,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,sw]
-ABC = [boy,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,sw]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Zmid]
-Aditmadzs = admin + staff + creator
+maxgie = LINE('')
+maxgie.log("Auth Token : " + str(maxgie.authToken))
+maxgie.log("Timeline Token : " + str(maxgie.tl.channelAccessToken))
 
-protectqr = []
-protectkick = []
-protectjoin = []
-protectinvite = []
-protectcancel = []
-protectantijs = []
-ghost = []
-
-welcome = []
-simisimi = []
-translateen = []
-translateid = []
-translateth = []
-translatetw = []
-translatear = []
-
-myProfile = {
-	"displayName": "",
-	"statusMessage": "",
-	"pictureStatus": ""
-}
-
-boyProfile = boy.getProfile()
-myProfile["displayName"] = boyProfile.displayName
-myProfile["statusMessage"] = boyProfile.statusMessage
-myProfile["pictureStatus"] = boyProfile.pictureStatus
-
-responsename1 = k1.getProfile().displayName
-responsename2 = k2.getProfile().displayName
-responsename3 = k3.getProfile().displayName
-responsename4 = k4.getProfile().displayName
-responsename5 = k5.getProfile().displayName
-responsename6 = k6.getProfile().displayName
-responsename7 = k7.getProfile().displayName
-responsename8 = k8.getProfile().displayName
-responsename9 = k9.getProfile().displayName
-responsename10 = k10.getProfile().displayName
-responsename = sw.getProfile().displayName
-
-cctv = {
-    "cyduk":{},
-    "point":{},
-    "sidermem":{}
-}
-
-with open('creator.json', 'r') as fp:
-    creator = json.load(fp)
-with open('owner.json', 'r') as fp:
-    owner = json.load(fp)
-with open('admin.json', 'r') as fp:
-    admin = json.load(fp)    
-
-Setbot1 = codecs.open("setting.json","r","utf-8")
-Setmain = json.load(Setbot1)
-Setbot2 = codecs.open("settings.json","r","utf-8")
-settings = json.load(Setbot2)
-Setbot3 = codecs.open("wait.json","r","utf-8")
-wait = json.load(Setbot3)
-Setbot4 = codecs.open("read.json","r","utf-8")
-read = json.load(Setbot4)
+waitOpen = codecs.open("Max2.json","r","utf-8")
+settingsOpen = codecs.open("max.json","r","utf-8")
+imagesOpen = codecs.open("image.json","r","utf-8")
+stickersOpen = codecs.open("sticker.json","r","utf-8")
+wait = json.load(waitOpen)
+images = json.load(imagesOpen)
+settings = json.load(settingsOpen)
+stickers = json.load(stickersOpen)
 #==============================================================================#
-clMID = cl.profile.mid
-clProfile = cl.getProfile()
-clSettings = cl.getSettings()
+maxgieMID = maxgie.profile.mid
+maxgieProfile = maxgie.getProfile()
+maxgieSettings = maxgie.getSettings()
 #==============================================================================#
-clPoll = OEPoll(cl)
-clMID = cl.getProfile().mid
-admin = [clMID]
+maxgiePoll = OEPoll(maxgie)
+maxgieMID = maxgie.getProfile().mid
+admin = [maxgieMID]
 loop = asyncio.get_event_loop()
 listToken = ['desktopmac','desktopwin','iosipad','chromeos','win10']
 mc = {"wr":{}}
@@ -336,8 +180,8 @@ user2 = ""
 setTime = {}
 setTime = rfuSet['setTime']
 
-contact = cl.getProfile() 
-backup = cl.getProfile() 
+contact = maxgie.getProfile() 
+backup = maxgie.getProfile() 
 backup.dispalyName = contact.displayName 
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
@@ -348,17 +192,17 @@ Start = time.time()
 tz = pytz.timezone("Asia/Jakarta")
 timeNow = datetime.now(tz=tz)
 
-settings["myProfile"]["displayName"] = clProfile.displayName
-settings["myProfile"]["statusMessage"] = clProfile.statusMessage
-settings["myProfile"]["pictureStatus"] = clProfile.pictureStatus
-cont = cl.getContact(clMID)
+settings["myProfile"]["displayName"] = maxgieProfile.displayName
+settings["myProfile"]["statusMessage"] = maxgieProfile.statusMessage
+settings["myProfile"]["pictureStatus"] = maxgieProfile.pictureStatus
+cont = maxgie.getContact(maxgieMID)
 settings["myProfile"]["videoProfile"] = cont.videoProfile
-coverId = cl.getProfileDetail()["result"]["objectId"]
+coverId = maxgie.getProfileDetail()["result"]["objectId"]
 settings["myProfile"]["coverId"] = coverId
 
-ProfileMe["statusMessage"] = clProfile.statusMessage
-ProfileMe["pictureStatus"] = clProfile.pictureStatus
-coverId = cl.getProfileDetail()["result"]["objectId"]
+ProfileMe["statusMessage"] = maxgieProfile.statusMessage
+ProfileMe["pictureStatus"] = maxgieProfile.pictureStatus
+coverId = maxgie.getProfileDetail()["result"]["objectId"]
 ProfileMe["coverId"] = coverId
 #=====================================================================
 with open("max.json", "r", encoding="utf_8_sig") as f:
@@ -374,92 +218,92 @@ def RhyN_(to, mid):
     try:
         aa = '{"S":"0","E":"3","M":'+json.dumps(mid)+'}'
         text_ = '@Ma '
-        cl.sendMessage(to, text_, contentMetadata={'MENTION':'{"MENTIONEES":['+aa+']}'}, contentType=0)
+        maxgie.sendMessage(to, text_, contentMetadata={'MENTION':'{"MENTIONEES":['+aa+']}'}, contentType=0)
     except Exception as error:
         logError(error)
 def sendMessageCustom(to, text, icon , name):
     annda = {'MSG_SENDER_ICON': icon,
         'MSG_SENDER_NAME':  name,
     }
-    cl.sendMessage(to, text, contentMetadata=annda)
+    maxgie.sendMessage(to, text, contentMetadata=annda)
 def sendMessageCustomContact(to, icon, name, mid):
     annda = { 'mid': mid,
     'MSG_SENDER_ICON': icon,
     'MSG_SENDER_NAME':  name,
     }
-    cl.sendMessage(to, '', annda, 13)
+    maxgie.sendMessage(to, '', annda, 13)
 def cloneProfile(mid):
-    contact = cl.getContact(mid)
+    contact = maxgie.getContact(mid)
     if contact.videoProfile == None:
         maxgie.cloneContactProfile(mid)
     else:
-        profile = cl.getProfile()
+        profile = maxgie.getProfile()
         profile.displayName, profile.statusMessage = contact.displayName, contact.statusMessage
-        cl.updateProfile(profile)
-        pict = cl.downloadFileURL('http://dl.profile.line-cdn.net/' + contact.pictureStatus, saveAs="tmp/pict.bin")
-        vids = cl.downloadFileURL( 'http://dl.profile.line-cdn.net/' + contact.pictureStatus + '/vp', saveAs="tmp/video.bin")
+        maxgie.updateProfile(profile)
+        pict = maxgie.downloadFileURL('http://dl.profile.line-cdn.net/' + contact.pictureStatus, saveAs="tmp/pict.bin")
+        vids = maxgie.downloadFileURL( 'http://dl.profile.line-cdn.net/' + contact.pictureStatus + '/vp', saveAs="tmp/video.bin")
         changeVideoAndPictureProfile(pict, vids)
-    coverId = cl.getProfileDetail(mid)['result']['objectId']
-    cl.updateProfileCoverById(coverId)
+    coverId = maxgie.getProfileDetail(mid)['result']['objectId']
+    maxgie.updateProfileCoverById(coverId)
 def backupProfile():
-    profile = cl.getContact(clMID)
+    profile = maxgie.getContact(maxgieMID)
     settings['myProfile']['displayName'] = profile.displayName
     settings['myProfile']['pictureStatus'] = profile.pictureStatus
     settings['myProfile']['statusMessage'] = profile.statusMessage
     settings['myProfile']['videoProfile'] = profile.videoProfile
-    coverId = cl.getProfileDetail()['result']['objectId']
+    coverId = maxgie.getProfileDetail()['result']['objectId']
     settings['myProfile']['coverId'] = str(coverId)
 def restoreProfile():
-    profile = cl.getProfile()
+    profile = maxgie.getProfile()
     profile.displayName = settings['myProfile']['displayName']
     profile.statusMessage = settings['myProfile']['statusMessage']
     if settings['myProfile']['videoProfile'] == None:
         profile.pictureStatus = settings['myProfile']['pictureStatus']
-        cl.updateProfileAttribute(8, profile.pictureStatus)
-        cl.updateProfile(profile)
+        maxgie.updateProfileAttribute(8, profile.pictureStatus)
+        maxgie.updateProfile(profile)
     else:
-        cl.updateProfile(profile)
-        pict = cl.downloadFileURL('http://dl.profile.line-cdn.net/' + settings['myProfile']['pictureStatus'], saveAs="tmp/pict.bin")
-        vids = cl.downloadFileURL( 'http://dl.profile.line-cdn.net/' + settings['myProfile']['pictureStatus'] + '/vp', saveAs="tmp/video.bin")
+        maxgie.updateProfile(profile)
+        pict = maxgie.downloadFileURL('http://dl.profile.line-cdn.net/' + settings['myProfile']['pictureStatus'], saveAs="tmp/pict.bin")
+        vids = maxgie.downloadFileURL( 'http://dl.profile.line-cdn.net/' + settings['myProfile']['pictureStatus'] + '/vp', saveAs="tmp/video.bin")
         changeVideoAndPictureProfile(pict, vids)
     coverId = settings['myProfile']['coverId']
-    cl.updateProfileCoverById(coverId)
+    maxgie.updateProfileCoverById(coverId)
 def autoresponuy(to,msg,wait):
     to = msg.to
     if msg.to not in wait["GROUP"]['AR']['AP']:
         return
     if msg.to in wait["GROUP"]['AR']['S']:
-        cl.sendMessage(msg.to,text=None,contentMetadata=wait["GROUP"]['AR']['S'][msg.to]['Sticker'], contentType=7)
+        maxgie.sendMessage(msg.to,text=None,contentMetadata=wait["GROUP"]['AR']['S'][msg.to]['Sticker'], contentType=7)
     if(wait["GROUP"]['AR']['P'][msg.to] in [""," ","\n",None]):
         return
     if '@!' not in wait["GROUP"]['AR']['P'][msg.to]:
         wait["GROUP"]['AR']['P'][msg.to] = '@!'+wait["GROUP"]['AR']['P'][msg.to]
-    nama = cl.getGroup(msg.to).name
-    sd = cl.waktunjir()
-    cl.sendMention(msg.to,wait["GROUP"]['AR']['P'][msg.to].replace('greeting',sd).replace(';',nama),'',[msg._from]*wait["GROUP"]['AR']['P'][msg.to].count('@!'))
+    nama = maxgie.getGroup(msg.to).name
+    sd = maxgie.waktunjir()
+    maxgie.sendMention(msg.to,wait["GROUP"]['AR']['P'][msg.to].replace('greeting',sd).replace(';',nama),'',[msg._from]*wait["GROUP"]['AR']['P'][msg.to].count('@!'))
 def ClonerV2(to):
     try:
-        contact = cl.getContact(to)
-        profile = cl.profile
-        profileName = cl.profile
-        profileStatus = cl.profile
+        contact = maxgie.getContact(to)
+        profile = maxgie.profile
+        profileName = maxgie.profile
+        profileStatus = maxgie.profile
         profileName.displayName = contact.displayName
         profileStatus.statusMessage = contact.statusMessage
-        cl.updateProfile(profileName)
-        cl.updateProfile(profileStatus)
-        profile.pictureStatus = cl.downloadFileURL('http://dl.profile.line-cdn.net/{}'.format(contact.pictureStatus, 'path'))
-        if cl.getProfileCoverId(to) is not None:
-            cl.updateProfileCoverById(cl.getProfileCoverId(to))
-        cl.updateProfilePicture(profile.pictureStatus)
+        maxgie.updateProfile(profileName)
+        maxgie.updateProfile(profileStatus)
+        profile.pictureStatus = maxgie.downloadFileURL('http://dl.profile.line-cdn.net/{}'.format(contact.pictureStatus, 'path'))
+        if maxgie.getProfileCoverId(to) is not None:
+            maxgie.updateProfileCoverById(maxgie.getProfileCoverId(to))
+        maxgie.updateProfilePicture(profile.pictureStatus)
         print("Success Clone Profile {}".format(contact.displayName))
-        return cl.updateProfile(profile)
+        return maxgie.updateProfile(profile)
         if contact.videoProfile == None:
             return "Get Video Profile"
         path2 = "http://dl.profile.line-cdn.net/" + profile.pictureStatus
-        cl.updateProfilePicture(path2, 'vp')
+        maxgie.updateProfilePicture(path2, 'vp')
     except Exception as error:
         print(error)
-#cl = "ua053fcd4c52917706ae60c811e39d3ea"
+#maxg = "ua053fcd4c52917706ae60c811e39d3ea"
 def sendMentionFooter(to, mid, firstmessage, lastmessage):
     try:
         arrData = ""
@@ -471,13 +315,13 @@ def sendMentionFooter(to, mid, firstmessage, lastmessage):
         arrData = {'S':slen, 'E':elen, 'M':mid}
         arr.append(arrData)
         text += mention + str(lastmessage)
-        nama = "{}".format(cl.getContact(clMID).displayName)
-        img = "http://dl.profile.line-cdn.net/{}".format(cl.getContact(clMID).pictureStatus)
+        nama = "{}".format(maxgie.getContact(maxgieMID).displayName)
+        img = "http://dl.profile.line-cdn.net/{}".format(maxgie.getContact(maxgieMID).pictureStatus)
         ticket = "https://line.me/ti/p/z7CqVLtFII"
-        cl.sendMessage(to, text, {'AGENT_LINK': ticket, 'AGENT_ICON': img, 'AGENT_NAME': nama, 'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+        maxgie.sendMessage(to, text, {'AGENT_LINK': ticket, 'AGENT_ICON': img, 'AGENT_NAME': nama, 'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         logError(error)
-        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+        maxgie.sendMessage(to, "[ INFO ] Error :\n" + str(error))
 
 def mentions(to, text="", mids=[]):
     arrData = ""
@@ -505,16 +349,16 @@ def mentions(to, text="", mids=[]):
         arrData = {'S':str(slen), 'E':str(elen - 4), 'M':mids[0]}
         arr.append(arrData)
         textx += mention + str(text)
-    cl.sendMessage(to, textx, {'AGENT_NAME':'LINE OFFICIAL', 'AGENT_LINK': 'line://ti/p/~{}'.format(cl.getProfile().userid), 'AGENT_ICON': "http://dl.profile.line-cdn.net/" + cl.getContact("ua053fcd4c52917706ae60c811e39d3ea").picturePath, 'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    maxgie.sendMessage(to, textx, {'AGENT_NAME':'LINE OFFICIAL', 'AGENT_LINK': 'line://ti/p/~{}'.format(maxgie.getProfile().userid), 'AGENT_ICON': "http://dl.profile.line-cdn.net/" + maxgie.getContact("ua053fcd4c52917706ae60c811e39d3ea").picturePath, 'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
 def changeVideoAndPictureProfile(pict, vids):
     try:
         files = {'file': open(vids, 'rb')}
-        obs_params = cl.genOBSParams({'oid': clMID, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4'})
+        obs_params = maxgie.genOBSParams({'oid': maxgieMID, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4'})
         data = {'params': obs_params}
-        r_vp = cl.server.postContent('{}/talk/vp/upload.nhn'.format(str(cl.server.LINE_OBS_DOMAIN)), data=data, files=files)
+        r_vp = maxgie.server.postContent('{}/talk/vp/upload.nhn'.format(str(maxgie.server.LINE_OBS_DOMAIN)), data=data, files=files)
         if r_vp.status_code != 201:
             return "Failed update profile"
-        cl.updateProfilePicture(pict, 'vp')
+        maxgie.updateProfilePicture(pict, 'vp')
         return "Success update profile"
     except Exception as e:
         raise Exception("Error change video and picture profile {}".format(str(e)))
@@ -523,7 +367,7 @@ def sendTemplate(to, data):
     xyz = LiffChatContext(to)
     xyzz = LiffContext(chat=xyz)
     view = LiffViewRequest('1602687308-GXq4Vvk9', xyzz)
-    token = cl.liff.issueLiffView(view)
+    token = maxgie.liff.issueLiffView(view)
     url = 'https://api.line.me/message/v3/share'
     headers = {
         'Content-Type': 'application/json',

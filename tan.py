@@ -1,4 +1,4 @@
-# แก้โดย SELFBOT-BY:MAX ติดต่อได้ที่เบอร์ 191
+# แก้โดย SELFBOT-BY:꧁💓 @:꓄ꍏꈤᖘꍏ꓄꓄ꍏꌩ💓꧂ ติดต่อได้ที่เบอร์ 191
 # -*- coding: utf-8 -*-
 import LINEPY
 from LINEPY import *
@@ -96,10 +96,10 @@ poll = LinePoll(k8)
 poll = LinePoll(k9)
 poll = LinePoll(k10)
 call = boy
-creator = ["u83211e3b69096f869d545aed2d1724d3"]
-owner = ["u83211e3b69096f869d545aed2d1724d3"]
-admin = ["u83211e3b69096f869d545aed2d1724d3"]
-staff = ["u83211e3b69096f869d545aed2d1724d3"]
+creator = ["uda8195e53e6c6e17f3f745743e477100"]
+owner = ["uda8195e53e6c6e17f3f745743e477100"]
+admin = ["uda8195e53e6c6e17f3f745743e477100"]
+staff = ["uda8195e53e6c6e17f3f745743e477100"]
 mid = boy.getProfile().mid
 Amid = k1.getProfile().mid
 Bmid = k2.getProfile().mid

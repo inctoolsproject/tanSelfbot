@@ -11,7 +11,7 @@
 
 # Termux
 
-```sh
+    ```sh
          apt update
          apt upgrade
          apt install python
@@ -32,7 +32,7 @@
          git clone https://github.com/tanpattaya/tanSelfbot
          cd tanSelfbot
          python3 adit.py
-```
+      ```
 
 # VPS 
 ```sh
